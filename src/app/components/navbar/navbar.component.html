@@ -1,0 +1,20 @@
+<nav class="navbar navbar-light" style="background-color: #154360;">
+  <a class="navbar-brand">Banco de <span class="text-danger">tiempo</span></a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/home"><span class="text-light">Home</span><span class="sr-only">(current)</span></a>
+    </li>
+  </ul>
+  <form class="form-inline">
+    
+    <a routerLink="/login"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button></a>
+  </form>
+</nav>
+<div class="navview-content">
+  <div class="card-footer pie">
+      <app-footer></app-footer>
+  </div>
+  <div class="main-container">
+      <router-outlet></router-outlet>
+  </div>          
+</div>

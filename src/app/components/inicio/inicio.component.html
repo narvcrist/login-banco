@@ -1,0 +1,122 @@
+<div class="card">
+  <div class="card-header">
+      <b>Mis datos personales</b>
+  </div>
+</div>
+<div class="card-content p-2 publicar">
+  <div class="col-12 separador">
+          <input [hidden]="true" type="file" id="foto" #fileInput
+          (change)="CodificarArchivo($event)" accept="image/*">
+          <img (click)="fileInput.click()" src="https://static.thenounproject.com/png/17241-200.png" >
+      
+
+  </div>
+  <div class="col-12 separador">
+          <table class="table striped row-border">
+                  <thead>
+
+                  </thead>
+                  <tbody>
+                  <tr>
+                      
+                      <td>Nombres:</td>
+                      
+                      <td>JefersonQuintana </td>
+                  </tr>
+                  <tr>
+                      <td>Fecha Nacimiento:</td>
+                      
+                      <td>00/00/0000</td>
+
+                  </tr>
+                  <tr>
+                      <td>Celular:</td>
+                      
+                      <td>0000000000</td>
+                  </tr>
+                  
+                  <tr>
+                      <td>Cédula:</td>
+                      
+                      <td>0000000000</td>
+                  </tr>
+                  <tr>
+                      <td>Descripción:</td>
+                      
+                      <td>xxxxxxxxx</td>
+                  </tr>
+                  <tr>
+                      <td>Email:</td>
+                    
+                      <td>xxxx@xx.xxx</td>
+                  </tr>
+                  <tr>
+                      <td>Teléfono:</td>
+                      
+                      <td>0000000</td>
+                  </tr>
+                  </tbody>
+              </table>
+              <hr  noshade="noshade" size="2" width="580%" />
+              <button type="button" class="btn btn-primary float-right" (click)="open(content)"><i class="fas fa-user-edit"></i></button>
+  </div>
+  <ng-template #content let-c="close" let-d="dismiss">
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Editar Perfil</h4>
+  <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+      <table class="table striped row-border">
+              <thead>
+
+              </thead>
+              <tbody>
+              <tr>
+                  
+                  <td>Nombres:</td>
+                  
+                  <td>JefersonQuintana </td>
+              </tr>
+              <tr>
+                  <td>Fecha Nacimiento:</td>
+                  
+                  <td>00/00/0000</td>
+
+              </tr>
+              <tr>
+                  <td>Celular:</td>
+                  
+                  <td>0000000000</td>
+              </tr>
+              
+              <tr>
+                  <td>Cédula:</td>
+                  
+                  <td>0000000000</td>
+              </tr>
+              <tr>
+                  <td>Descripción:</td>
+                  
+                  <td>xxxxxxxxx</td>
+              </tr>
+              <tr>
+                  <td>Email:</td>
+                
+                  <td>xxxx@xx.xxx</td>
+              </tr>
+              <tr>
+                  <td>Teléfono:</td>
+                  
+                  <td>0000000</td>
+              </tr>
+              </tbody>
+          </table>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Guardar</button>
+</div>
+</ng-template>
+</div>
+
